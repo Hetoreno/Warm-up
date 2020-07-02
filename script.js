@@ -1,105 +1,146 @@
 //Variables
-var x =5;
+var x=6;
 console.log(x);
 
-var y;
-y =8;
-console.log(y);
-
-var xx = 7;
-xx=89;
+var xx;
+xx=8;
 console.log(xx);
 
-var h = 7;
-var hh= 8;
-console.log(h + hh);
+var y=8;
+y=99;
+console.log(y);
 
-var k =8;
-k = k + 6;
-console.log(k);
+var something=null;
+console.log(something);
 
-var kk =9;
-kk+=7;
-console.log(kk);
+const adds=3;
+const sub=3;
+console.log(adds+sub);
 
-var why = null;
-console.log(why);
+let ye =7;
+ye = ye + 3;
+console.log(ye);
+
+let yo = 8;
+yo+=4;
+console.log(yo);
+
+var n = `hi`;
+var intro=`${n} , I'm your new friend!`;
+console.log(intro);
 //Arrays
 console.log('');
 
-var list=['Hello',1888,false];
+const food=[`hector`,2334,false];
+console.log(food);
+
+let ghost;
+ghost=[`I love food`, 2234,true];
+console.log(ghost);
+
+let list= new Array();
+list[0]=`My name is ..`;
+list[1]=`is who`;
+list[2]=42423;
+list[3]=true;
 console.log(list);
 
-var newList;
-newList=['Name',1998, true];
-console.log(newList);
-
-var newNew= new Array();
-newNew[0]='Hector';
-newNew[1]=123;
-newNew[2]=null;
-newNew[3]=true;
-console.log(newNew);
-
-console.log('');
 //Loops
-for (i=0; i<=5; i++){
+console.log(``);
+
+for (var i=0; i <= 4; i++){
     console.log(i);
 }
 
-console.log('');
-
-for (e=0; e<=8; e+=2){
+for (let e=0; e<=12; e+=3){
     console.log(e);
 }
-
-console.log('');
 //.length
-var looper=['hello',12,true];
-for (i=0; i < looper.length; i++){
-    console.log(looper[i]);
+console.log(``);
+let hi=[`hello`,1111,4444,true];
+for (e=0;e<hi.length;e++){
+    console.log(hi[e]);
 }
 //If statements
-console.log('');
+console.log(``);
 
-var one=1;
-var two=2;
-
-if (one < two){
-    console.log(true);
+var op1=`correct`;
+var op2=`nope`;
+if (op1 === `correct`){
+    console.log(`Thats correct`);
+} else if (op1 === op2){
+    console.log(`Thats correct!!!`);
 } else {
-    console.log(false);
+    console.log(`huhhhh`);
 }
-//Continue and break(loops)
+//Switch and break statements
+console.log(``);
 
+const fruit=`mango`;
 
-console.log('');
+switch(fruit){
+    case `banana`:
+        console.log(`I love bananas`);
+        break;
+    case `apples`:
+        console.log(`I love apples`);
+        break;
+    default:
+        console.log(`Where\'s mangos?? :(`);
+}
 //Functions
-function action(newNumber){
-    console.log(newNumber);
+console.log(``);
+
+function newNumber(number){
+console.log(number);
+}
+newNumber(223);
+
+console.log(`......`);
+
+function newOrder(message){
+console.log(`be traced from the beginning`);
 }
 
-action(5);
+function newDisplay(text){
+console.log(`I hope this message goes thru so the second can....`);
+
+newOrder();
+}
+
+newDisplay();
+
+console.log(`......`);
+
+function fracts(one,two){
+    if (one < two){
+        return one;
+    } else {
+        return one + two;
+    }
+}
+
+const updated= fracts(5,1);
+console.log(updated);
 //Objects
-var obg={
-    name: 'Hector',
-    year:8888,
+console.log(``);
+var newList={
+    name: `Hector`,
+    number: 233,
     itsTrue: false
-};
-
-console.log(obg)
-
-console.log('');
+    };
+    console.log(newList);
 //Methods in Objects
+console.log(``);
 
-var groceryList={
-    types: 'healthy',
-    amount: 6,
-    itsGood: true,
-        calcCalo: function(){
-            this.calories = 8 * this.amount; 
-        }
+var orderList={
+    name:`Cheeseburger`,
+    count:2,
+    itsTrue: true,
+    macro: function(){
+        this.calories = 200 * this.count;
+    }
 };
 
-groceryList.calcCalo();
-console.log(groceryList);
+orderList.macro();
+console.log(orderList);
